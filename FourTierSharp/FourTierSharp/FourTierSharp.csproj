@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="TcServerNetBinding4064">
+      <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcServerNetBinding4064.dll</HintPath>
+    </Reference>
+    <Reference Include="TcServerNetBindingInterface40">
+      <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcServerNetBindingInterface40.dll</HintPath>
+    </Reference>
+    <Reference Include="TcSoaAdministrationStrong">
+      <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcSoaAdministrationStrong.dll</HintPath>
+    </Reference>
+    <Reference Include="TcSoaClient">
+      <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcSoaClient.dll</HintPath>
+    </Reference>
+    <Reference Include="TcSoaCommon">
+      <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcSoaCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="TcSoaCoreStrong">
+      <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcSoaCoreStrong.dll</HintPath>
+    </Reference>
+    <Reference Include="TcSoaQueryStrong">
+      <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcSoaQueryStrong.dll</HintPath>
+    </Reference>
+    <Reference Include="TcSoaStrongModel">
+      <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcSoaStrongModel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
