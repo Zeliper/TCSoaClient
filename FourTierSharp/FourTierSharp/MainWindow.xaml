@@ -8,9 +8,10 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
-            <TextBox Width="200">
+            <TextBox x:Name="TB_ID" Width="200">
             </TextBox>
-            <TextBox Width="200"/>
+            <TextBox x:Name="TB_PW" Width="200"/>
+            <Button Height="20" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Window>
