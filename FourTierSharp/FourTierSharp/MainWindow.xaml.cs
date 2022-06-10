@@ -37,8 +37,17 @@ namespace FourTierSharp
         [Obsolete]
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Task.Run(() => Client = LoginSession());
-            //MessageBox.Show(Client.CurrentUser.User_name);
+            var id = TB_ID.Text;
+            var pw = TB_PW.Text;
+            Task.Run(() => {
+                var client = new TCClient(id, pw);
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    Client = client;
+                    MessageBox.Show(Client.CurrentUser.User_name);
+                });
+            });
+            
             //DataManagementService dmService = DataManagementService.getService(Session.GetConnection());
             //MessageBox.Show(Client.AssetId);
 
@@ -59,13 +68,6 @@ namespace FourTierSharp
             //    msg += String.Format("{0} : {1}\n",o.Uid,o.Object_name);
             //}
             //MessageBox.Show(msg);
-        }
-
-        [Obsolete]
-        private TCClient LoginSession()
-        {
-            
-            return new TCClient(TB_ID.Text, TB_PW.Text);
         }
     }
 }
