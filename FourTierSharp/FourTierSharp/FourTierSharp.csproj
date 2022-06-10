@@ -17,6 +17,9 @@
     <Reference Include="TcSoaAdministrationStrong">
       <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcSoaAdministrationStrong.dll</HintPath>
     </Reference>
+    <Reference Include="TcSoaClassificationStrong">
+      <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcSoaClassificationStrong.dll</HintPath>
+    </Reference>
     <Reference Include="TcSoaClient">
       <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcSoaClient.dll</HintPath>
     </Reference>
@@ -32,6 +35,14 @@
     <Reference Include="TcSoaStrongModel">
       <HintPath>..\..\..\..\..\..\Siemens\soa_client\net\libs\TcSoaStrongModel.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Soa\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="6.0.4" />
   </ItemGroup>
 
 </Project>
